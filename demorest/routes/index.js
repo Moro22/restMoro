@@ -14,5 +14,10 @@ router.get('/v1/guest', invitados.listaInvitados)
 
 const Status=require("../modulos/status/status");
 router.get('/v1/Status', Status.listaStatus)
+
+//Metodo para status
+
+const Organizer=require("../modulos/organizer/organizer");
+router.get('/v1/Organizer', Organizer.listaOrganizer)
 module.exports = router;
 
